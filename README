@@ -2,7 +2,7 @@
 Portable C++ API for Interactive Brokers TWS
 ============================================
 
-Forked. From Ruediger Meier branch.
+Forked from Ruediger Meier branch.
 This twsapi is almost identical to the original IB C++ Posix API. It contains
 several bugfixes, usage improvements and it's using the autotools build system.
 For more details read "Changes of original IB API" below.
