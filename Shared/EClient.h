@@ -1,8 +1,8 @@
 #ifndef eclient_def
 #define eclient_def
 
-#include "CommonDefs.h"
-#include "IBString.h"
+#include "Shared/CommonDefs.h"
+#include "Shared/IBString.h"
 
 namespace IB {
 

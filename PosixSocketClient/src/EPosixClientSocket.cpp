@@ -2,9 +2,8 @@
 
 #include "config.h"
 #include "EPosixClientSocketPlatform.h"
-#include "TwsSocketClientErrors.h"
-#include "EWrapper.h"
-
+#include "Shared/TwsSocketClientErrors.h"
+#include "Shared/EWrapper.h"
 #include <string.h>
 #include <assert.h>
 #include <stdio.h>
@@ -197,6 +196,7 @@ bool EPosixClientSocket::eConnect2( const char *host, unsigned int port,
 			continue;
 		}
 		/* successfully  connected */
+                
 		break;
 	}
 

@@ -1,7 +1,7 @@
 #ifndef eclientsocketbase_h__INCLUDED
 #define eclientsocketbase_h__INCLUDED
 
-#include "EClient.h"
+#include "Shared/EClient.h"
 
 #include <memory>
 #include <string>

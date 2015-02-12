@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "IBString.h"
+#include "EWrapper.h"
 
 namespace IB {
 
@@ -76,6 +77,21 @@ struct Contract
 	  , underComp(NULL)
    {
    }
+   
+   /**
+    * 
+    * @param rhs
+    * @return 
+    */
+   inline bool operator <(const Contract& rhs) const {
+         return this->symbol < rhs.symbol || (!(rhs.symbol < symbol) && (currency < rhs.currency));
+   }
+   
+//   inline bool operator==(const Contract& rhs) const {
+//         return symbol==rhs.symbol && conId==rhs.conId && secType==rhs.secType && expiry==rhs.expiry && strike==rhs.strike && right==rhs.right
+//                 && multiplier==rhs.multiplier && exchange==rhs.exchange && primaryExchange==rhs.primaryExchange && currency==rhs.currency
+//                 && localSymbol==rhs.localSymbol && includeExpired==rhs.includeExpired && secIdType==rhs.secIdType && secId==rhs.secId;
+//   }
 
    long    conId;
    IBString symbol;
